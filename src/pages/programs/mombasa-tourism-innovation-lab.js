@@ -4,8 +4,16 @@
 import Logo from '@/components/shared/Logo'
 
 const MombasaTourismInnovationLab = () => {
+  const paragraphStyle = {
+    fontSize: '60px'
+  };
   return (
+      
+    
     <>
+
+
+
       {/* hero */}
       <div className='bg-soft-primary-light position-relative py-4 py-md-0'>
         <div className='container'>
@@ -49,15 +57,24 @@ const MombasaTourismInnovationLab = () => {
           <p>
             The Mombasa innovation lab, hosted at Swahilipot Hub Foundation,
             seeks to inspire the interest of opportunity youth in Mombasa in
-            culture and heritage tourism as a means of Job creation. The logic
+            Tourism, Culture and heritage as a means of Job creation. The logic
             of change is underpinned by this quote from the Cabinet secretary
             Tourism and Wildlife.
           </p>
 
-          <div className='card m-5 p-5'>
-            <figure>
-              <blockquote className='blockquote'>
-                <p>
+          <>
+  {/* Features */}
+  <div className="container">
+    <div className="banner-end">
+      <div className="row align-items-md-center">
+        <div className="col-md-6 order-md-2">
+          <div className="p-5 p-md-7">
+            {/* Heading */}
+            <div className="mb-7">
+              
+              <blockquote className='blockquote'  >
+             
+                <p >
                   It is no longer possible for travel and tourism providers, or
                   destinations, to continue in a “business as usual” model or
                   mind-set. Innovation and change coupled with agility and
@@ -65,12 +82,49 @@ const MombasaTourismInnovationLab = () => {
                   future.
                 </p>
               </blockquote>
+            </div>
+            {/* End Heading */}
+           
+          </div>
+
+
+          <div className='card m-5 p-5'>
+            <figure>
+              
+             
               <figcaption className='blockquote-footer'>
                 Hon. Najib Balala{' '}
                 <cite title='Source Title'>EGH Cabinet Secretary</cite>
               </figcaption>
             </figure>
           </div>
+        </div>
+        {/* End Col */}
+        <div className="col-md-6 content-space-md-1">
+          <div className="w-85 w-md-100 mx-auto me-md-auto">
+            <img
+              className="img-fluid"
+              src="../images/balala.jpeg"
+              alt="Image Description"
+              style={{height:'400px',width:'800px'}}
+            />
+          </div>
+        </div>
+        {/* End Col */}
+      </div>
+      {/* End Row */}
+    </div>
+  </div>
+  {/* End Features */}
+</>
+
+
+
+
+
+
+
+
 
           <div className='container m-4 p-4'>
             <p>
@@ -82,7 +136,7 @@ const MombasaTourismInnovationLab = () => {
             <p>
               With support from the European Union, Camoes IP, Jumuia ya county
               Za Pwani, and the Go-Blue project to incubate innovative ideas in
-              cultural and heritage tourism in Mombasa county.
+              tourism, culture and heritage in Mombasa county.
             </p>
             <h3>Objectives of the Mombasa Tourism Innovation Lab</h3>
             <ul>
@@ -149,7 +203,7 @@ const MombasaTourismInnovationLab = () => {
                 <label htmlFor='message'>Messgae</label>
                 <textarea
                   className='form-control is-invalid'
-                  placeholder='Textarea field'
+                  placeholder='Talk to Us'
                   id='message'
                   rows={4}
                   defaultValue={''}
@@ -209,7 +263,28 @@ const MombasaTourismInnovationLab = () => {
           </ul>
         </section>
       </div>
+
+
+
+
+
+
+
+
+
+
+
+
     </>
+
+
+
+
+
+
+
+
+
   )
 }
 

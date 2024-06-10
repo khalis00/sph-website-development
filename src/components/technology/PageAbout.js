@@ -164,7 +164,7 @@ const PageAbout = () => {
           <div className="col-md-6">
             <img
               className="img-fluid"
-              src="../assets/sphImages/Image 27.jpg"
+              src="../images/pitching/1.jpg"
               alt="Image Description"
             />
           </div>

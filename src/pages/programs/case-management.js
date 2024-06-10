@@ -5,10 +5,10 @@ const Header = () => {
       {/* Hero */}
       <div className='position-relative'>
         <div className='container'>
-          <div className='row justify-content-lg-between'>
+          <div className='row border-bottom pb-5 justify-content-lg-between'>
             <div className='col-md-7 position-relative zi-1 content-space-1 content-space-md-3'>
               {/* Heading */}
-              <div className='mb-5'>
+              <div className='mb-5 '>
                 <h1 className='display-4 text-primary'>
                   Case Management
                   <br />

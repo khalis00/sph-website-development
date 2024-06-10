@@ -15,13 +15,13 @@ const AboutMenu = () => {
       onMouseLeave={() => setIsHovered(false)}
     >
       <Link href='/about' legacyBehavior>
-        <NavDropdown.Item as='a'>About Us</NavDropdown.Item>
+        <NavDropdown.Item as='a' className='hover-pointer'>About Us</NavDropdown.Item>
       </Link>
       <Link href='/contact' legacyBehavior>
-        <NavDropdown.Item as='a'>Contact Us</NavDropdown.Item>
+        <NavDropdown.Item as='a' className='hover-pointer'>Contact Us</NavDropdown.Item>
       </Link>
       <Link href='/about/origin' legacyBehavior>
-        <NavDropdown.Item as='a'>Our Origin Story</NavDropdown.Item>
+        <NavDropdown.Item as='a' className='hover-pointer'>Our Origin Story</NavDropdown.Item>
       </Link>
       {/* <Link href="/about/sponsors" legacyBehavior>
         <NavDropdown.Item as="a">Our Partners</NavDropdown.Item>

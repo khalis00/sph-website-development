@@ -132,6 +132,83 @@ const FeatureActions = () => {
               {/* End Row */}
             </div>
           </div>
+<<<<<<< HEAD
+=======
+          {/* End Col */}
+          <div className="col-sm-10 col-md-6 col-lg-5">
+            <div className="row gx-2 transform-y-5rem">
+              <div className="col-6">
+                <div className="d-grid gap-2">
+                  {/* Images */}
+                  <div
+                    className="d-none d-md-block bg-img-center"
+                    style={{
+ aliisph
+                      backgroundImage:"url(../assets/img/225x324/img1.jpg)",
+                  
+
+                      backgroundImage: "url(../assets/img/225x292/img1.jpg)",
+                      height: "18.25rem"
+ alpha-dev
+                    }}
+                  />
+                  <div
+                    className="d-none d-md-block bg-img-center"
+                    style={{
+                      backgroundImage: "url(../assets/img/225x324/img1.jpg)",
+                      height: "20.25rem"
+                    }}
+                  />
+                  <img
+                    className="d-md-none img-fluid w-100"
+                    src="../assets/img/225x292/img1.jpg"
+                    alt="Image Description"
+                  />
+                  <img
+                    className="d-md-none img-fluid w-100"
+                    src="../assets/img/225x324/img1.jpg"
+                    alt="Image Description"
+                  />
+                  {/* End Images */}
+                </div>
+              </div>
+              {/* End Col */}
+              <div className="col-6">
+                <div className="d-grid gap-2">
+                  {/* Images */}
+                  <div
+                    className="d-none d-md-block bg-img-center"
+                    style={{
+                      backgroundImage: "../assets/img/225x324/img1.jpg",
+                      height: "22rem"
+                    }}
+                  />
+                  <div
+                    className="d-none d-md-block bg-img-center"
+                    style={{
+                      backgroundImage: "url(../assets/img/225x261/img1.jpg)",
+                      height: "16rem"
+                    }}
+                  />
+                  <img
+                    className="d-md-none img-fluid w-100"
+                    src="../assets/img/225x355/img1.jpg"
+                    alt="Image Description"
+                  />
+                  <img
+                    className="d-md-none img-fluid w-100"
+                    src="../assets/img/225x261/img1.jpg"
+                    alt="Image Description"
+                  />
+                  {/* End Images */}
+                </div>
+              </div>
+              {/* End Col */}
+            </div>
+            {/* End Row */}
+          </div>
+          {/* End Col */}
+>>>>>>> 6bab4bf35dc7a4915e9c95e022b3416b0e458fa7
         </div>
         {/* End Hero */}
       

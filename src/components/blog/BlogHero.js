@@ -7,7 +7,7 @@ const BlogHero = () => {
           <div className='text-center mb-5'>
             <h1 className='text-white'>Swahilipot Hub Blog</h1>
             <p className='lead text-white'>
-              Check out the latest posts from the hub, by the community.
+              Check out the latest  the hub, by the community.
             </p>
           </div>
           {/* End Heading */}

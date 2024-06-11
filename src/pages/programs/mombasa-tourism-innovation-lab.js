@@ -61,6 +61,7 @@ const MombasaTourismInnovationLab = () => {
             of change is underpinned by this quote from the Cabinet secretary
             Tourism and Wildlife.
           </p>
+           
 
           <>
   {/* Features */}
@@ -72,16 +73,17 @@ const MombasaTourismInnovationLab = () => {
             {/* Heading */}
             <div className="mb-7">
               
-              <blockquote className='blockquote'  >
-             
-                <p >
-                  It is no longer possible for travel and tourism providers, or
+             {/* <blockquote className='blockquote'  > */}
+              
+                <h5>
+
+                  "It is no longer possible for travel and tourism providers, or
                   destinations, to continue in a “business as usual” model or
                   mind-set. Innovation and change coupled with agility and
                   ability to respond are critical for success today and into the
-                  future.
-                </p>
-              </blockquote>
+                  future."
+                </h5>
+              {/* </blockquote> */}
             </div>
             {/* End Heading */}
            
@@ -127,6 +129,7 @@ const MombasaTourismInnovationLab = () => {
 
 
           <div className='container m-4 p-4'>
+            
             <p>
               The inexistence of a structured way to innovate and scale new
               tourism products that entice the modern youthful traveller, who is

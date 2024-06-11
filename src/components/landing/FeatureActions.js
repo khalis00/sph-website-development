@@ -74,8 +74,13 @@ const FeatureActions = () => {
                   <div
                     className="d-none d-md-block bg-img-center"
                     style={{
+ aliisph
                       backgroundImage:"url(../assets/img/225x324/img1.jpg)",
                   
+
+                      backgroundImage: "url(../assets/img/225x292/img1.jpg)",
+                      height: "18.25rem"
+ alpha-dev
                     }}
                   />
                   <div

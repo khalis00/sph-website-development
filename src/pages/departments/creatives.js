@@ -1,3 +1,4 @@
+import Image from "next/image"
 /* eslint-disable @next/next/no-img-element */
 const creatives = () => {
   return (
@@ -16,8 +17,8 @@ const creatives = () => {
           {/*Creatives main image*/}
           <div className='text-center bg-gray-300'>
             <img
-            style={{maxWidth:"80%"}}
-              className=''
+              style={{ maxWidth: "68%", borderRadius:"5px"}}
+              className=""
               src='../images/creatives/creatives.jpeg'
               alt='Image Description'
             />

@@ -5,76 +5,71 @@ const SwahilipotPillar = () => {
     <>
       {/* Swahilipot Pillars */}
       <div className='bg-soft-success p-2'>
-        <div className='w-lg-65 text-center mt-4 mx-lg-auto mb-7'>
+        <div className='w-lg-65 text-center mt-4 mx-lg-auto mb-4'> {/* Reduced mb-7 to mb-4 */}
           <h3>Programs and Activities</h3>
         </div>
         <div className='position-relative'>
-          <div className='container content-space-1 content-space-md-3'>
+        <div className='container-fluid content-space-0 content-space-md-1 d-flex justify-content-center align-items-center'>
+
             <div className='row'>
               <div className='col-md-7'>
-                <div className='row'>
-                  <div className='col-sm-6 mb-3'>
-                    <div className='pe-md-3'>
-                      <h5>Technology and Innovation</h5>
-                      <p>
-                        Pwani Innovation Week: Showcasing coastal Kenya's
-                        technology and innovation. Innovation challenges and
-                        hackathons: Collaborative events solving problems with
-                        technology. Technology academy: Training in networking,
-                        software development, and digital literacy. Coding
-                        contests: Showcasing coding skills.
-                      </p>
-                    </div>
-                  </div>
-                  {/* End Col */}
-                  <div className='col-sm-6 mb-3'>
-                    <div className='pe-md-3'>
-                      <h5>Entrepreneurship</h5>
-                      <p>
-                        Pitching Thursday offers a platform for entrepreneurs to
-                        present their ideas and receive expert feedback. Info
-                        Sessions provide guidance and resources for aspiring
-                        business owners. Advisory services, technical
-                        assistance, and linkages offer support in finance and
-                        market connections. Startup School provides
-                        comprehensive training for successful startup ventures.
-                      </p>
-                    </div>
-                  </div>
-                  {/* End Col */}
+                <div className='pe-md-3 mb-3'>
+                  <h5>Technology and Innovation</h5>
+                  <p>
+                    Pwani Innovation Week: Showcasing coastal Kenya's
+                    technology and innovation. Innovation challenges and
+                    hackathons: Collaborative events solving problems with
+                    technology. Technology academy: Training in networking,
+                    software development, and digital literacy. Coding
+                    contests: Showcasing coding skills.
+                  </p>
                 </div>
-                {/* End Row */}
-                <div className='row'>
-                  <div className='col-sm-6 mb-3 mb-sm-0'>
-                    <div className='pe-md-3'>
-                      <h5>Creatives and Arts</h5>
-                      <p>
-                        Pwani Gat Talent offers local artists a platform to
-                        showcase their skills. CASIK provides dedicated spaces
-                        for creative expression. Friday Poetry is a regular
-                        event for poets and spoken word artists to perform. Koo
-                        Store serves as a creative hub and marketplace for
-                        artists and designers to sell their unique creations.
-                      </p>
-                    </div>
-                  </div>
-                  {/* End Col */}
-                  <div className='col-sm-6'>
-                    <div className='pe-md-3'>
-                      <h5>Heritage</h5>
-                      <p>
-                        MoHoA preserves and celebrates modern African cultural
-                        heritage. Heritopolis promotes preservation and
-                        documentation of heritage sites. Youth.Heritage.Africa
-                        engages youth in heritage conservation. Ode to the
-                        Ancestors is a cultural event honoring community
-                        heritage.
-                      </p>
-                    </div>
-                  </div>
-                  {/* End Col */}
+              </div>
+              {/* End Col */}
+              <div className='col-md-5'>
+                <div className='pe-md-3 mb-3'>
+                  <h5>Entrepreneurship</h5>
+                  <p>
+                    Pitching Thursday offers a platform for entrepreneurs to
+                    present their ideas and receive expert feedback. Info
+                    Sessions provide guidance and resources for aspiring
+                    business owners. Advisory services, technical
+                    assistance, and linkages offer support in finance and
+                    market connections. Startup School provides
+                    comprehensive training for successful startup ventures.
+                  </p>
                 </div>
-                {/* End Row */}
+              </div>
+              {/* End Col */}
+            </div>
+            {/* End Row */}
+            <div className='row'>
+              <div className='col-md-5'>
+                <div className='pe-md-3 mb-3'>
+                  <h5>Creatives and Arts</h5>
+                  <p>
+                    Pwani Gat Talent offers local artists a platform to
+                    showcase their skills. CASIK provides dedicated spaces
+                    for creative expression. Friday Poetry is a regular
+                    event for poets and spoken word artists to perform. Koo
+                    Store serves as a creative hub and marketplace for
+                    artists and designers to sell their unique creations.
+                  </p>
+                </div>
+              </div>
+              {/* End Col */}
+              <div className='col-md-7'>
+                <div className='pe-md-3'>
+                  <h5>Heritage</h5>
+                  <p>
+                    MoHoA preserves and celebrates modern African cultural
+                    heritage. Heritopolis promotes preservation and
+                    documentation of heritage sites. Youth.Heritage.Africa
+                    engages youth in heritage conservation. Ode to the
+                    Ancestors is a cultural event honoring community
+                    heritage.
+                  </p>
+                </div>
               </div>
               {/* End Col */}
             </div>
@@ -103,4 +98,4 @@ const SwahilipotPillar = () => {
   )
 }
 
-export default SwahilipotPillar
+export default SwahilipotPillar;

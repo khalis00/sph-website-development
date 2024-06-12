@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-
+import { Image } from 'react-bootstrap'
 const community = () => {
   return (
     <>
@@ -14,17 +14,26 @@ const community = () => {
                   <h1 className='display-4 text-primary'>
                     Community <span className='text-warning'>Department</span>
                   </h1>
-                  <p className='lead'>Tujenge Pamoja, Tufanye Tofauti</p>
+                  <p className='lead'>Tujenge Pamoja, Tufanye Tofauti </p>
                 </div>
                 {/* End Heading */}
               </div>
             </div>
-            <div className='container-fluid position-relative px-lg-7'>
-              <div className='mb-5'>
-                <img
-                  className='img-fluid'
+            <div className='container-fluid position-relative px-lg-7 '>
+              <div
+                className='container mb-8  '
+                style={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}
+              >
+                <Image
                   src='../assets/img/community.jpg'
                   alt='Image Description'
+                  rounded
+                  width={1000}
+                  fluid
                 />
               </div>
               {/* Background Shapes */}
@@ -32,21 +41,24 @@ const community = () => {
                 className='position-absolute zi-n1'
                 style={{ top: '-6rem', left: '-6rem' }}
               >
-                <img
+                <Image
                   src='../assets/svg/components/shape-1.svg'
                   alt='SVG'
                   width={500}
-                  style={{ width: '12rem' }}
+                  rounded
+                  fluid
                 />
               </div>
               <div
                 className='position-absolute zi-n1'
                 style={{ bottom: '-6rem', right: '-7rem' }}
               >
-                <img
+                <Image
                   src='../assets/svg/components/shape-7.svg'
                   alt='SVG'
                   width={250}
+                  rounded
+                  fluid
                 />
               </div>
               {/* End Background Shapes */}
@@ -55,7 +67,7 @@ const community = () => {
           {/* End Hero */}
         </>
 
-        <div className='container mt-6'>
+        <div className='container mt-8 mb-8'>
           <div className='row align-items-md-center'>
             <div className='col-md-6 order-md-2 mb-5 mb-md-0'>
               <div className='ps-md-5'>
@@ -90,10 +102,11 @@ const community = () => {
             </div>
             {/* End Col */}
             <div className='col-md-6'>
-              <img
-                className='img-fluid'
+              <Image
                 src='../assets/img/img00.jpg'
                 alt='Image Description'
+                rounded
+                fluid
               />
             </div>
             {/* End Col */}
@@ -102,12 +115,12 @@ const community = () => {
         </div>
         {/* End Features */}
         {/* Features */}
-        <div className='container content-space-1'>
+        <div className='container content-space-1 mb-8'>
           <div className='row align-items-md-center'>
             <div className='col-md-6 mb-5 mb-md-0'>
               <div className='pe-md-5'>
                 {/* Heading */}
-                <div className='mb-7'>
+                <div className='mb-2'>
                   <h3>Love, Unity, and Coexistence</h3>
                 </div>
                 {/* End Heading */}
@@ -147,10 +160,11 @@ const community = () => {
             </div>
             {/* End Col */}
             <div className='col-md-6'>
-              <img
-                className='img-fluid'
+              <Image
                 src='../assets/img/img01.jpg'
                 alt='Image Description'
+                rounded
+                fluid
               />
             </div>
           </div>
@@ -198,10 +212,11 @@ const community = () => {
             </div>
             {/* End Col */}
             <div className='col-md-6 mb-5'>
-              <img
-                className='img-fluid'
+              <Image
                 src='../assets/img/img20.jpg'
                 alt='Image Description'
+                rounded
+                fluid
               />
             </div>
             {/* End Col */}

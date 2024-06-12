@@ -7,7 +7,7 @@ const Testimonials = () => {
         <div className='text-center mb-5'>
           <img
             className='avatar avatar-xl avatar-4x3 rounded-circle'
-            src="/assets/images/achinga.jpg"
+            src="/assets/images/chris.jpeg"
             alt='Illustration'
           />
         </div>

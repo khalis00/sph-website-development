@@ -1,3 +1,6 @@
+import React from "react";
+import Image from "next/image";
+
 const PageAbout = () => {
   return (
     <>
@@ -31,12 +34,15 @@ const PageAbout = () => {
           </div>
           {/* End Col */}
           <div className="col-md-6">
-            <img
-              className="img-fluid"
-              src="../assets/sphImages/Image 45.jpg"
+            <div className="img-fluid">
+            <Image
+              src='/assets/sphImages/Image 45.jpg'
               alt="Data Science"
+              width={600}
+              height={400}
             
             />
+            </div>
             
           </div>
           {/* End Col */}
@@ -74,11 +80,14 @@ const PageAbout = () => {
           </div>
           {/* End Col */}
           <div className="col-md-6">
-            <img
-              className="img-fluid"
-              src="../assets/sphImages/Image 27.jpg"
-              alt="Image Description"
-            />
+            <div className="img-fluid">
+              <Image
+                src="/assets/sphImages/Image 27.jpg"
+                alt="Image Description"
+                width={600}
+                height={400}
+              />
+            </div>
           </div>
           {/* End Col */}
         </div>
@@ -116,11 +125,14 @@ const PageAbout = () => {
           </div>
           {/* End Col */}
           <div className="col-md-6">
-            <img
-              className="img-fluid"
-              src="../images/technologyteam/attachment.jpeg"
-              alt="Data Science"
-            />
+          <div className="img-fluid">
+              <Image
+                src="/images/technologyteam/attachment.jpeg"
+                alt="Image Description"
+                width={600}
+                height={400}
+              />
+            </div>
           </div>
           {/* End Col */}
         </div>
@@ -162,11 +174,14 @@ const PageAbout = () => {
           </div>
           {/* End Col */}
           <div className="col-md-6">
-            <img
-              className="img-fluid"
-              src="../images/pitching/1.jpg"
-              alt="Image Description"
-            />
+          <div className="img-fluid">
+              <Image
+                src="/images/pitching/1.jpg"
+                alt="Image Description"
+                width={600}
+                height={400}
+              />
+            </div>
           </div>
           {/* End Col */}
         </div>
@@ -203,11 +218,14 @@ const PageAbout = () => {
           </div>
           {/* End Col */}
           <div className="col-md-6 mb-5">
-            <img
-              className="img-fluid"
-              src="../assets/sphImages/Image 57.jpg"
-              alt="Data Science"
-            />
+           <div className="img-fluid">
+              <Image
+                src="/assets/sphImages/Image 57.jpg"
+                alt="Image Description"
+                width={600}
+                height={400}
+              />
+            </div>
           </div>
           {/* End Col */}
         </div>

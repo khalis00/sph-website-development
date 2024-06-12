@@ -7,6 +7,12 @@ const TeamCard = ({ imgSrc, name, role, description }) => {
           className='img-fluid rounded-circle mb-5'
           src={imgSrc}
           alt={`${name} Headshot`}
+          style={{
+            width:'260px',
+            height:'260px',
+            borderRadius:'50%',
+            objectFit:'cover',
+          }}
         />
         <h6 className='mb-1'>{name}</h6>
         <span className='d-block'>{role}</span>

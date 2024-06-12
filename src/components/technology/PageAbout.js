@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import { Image } from "react-bootstrap";
 
 const PageAbout = () => {
   return (
@@ -82,7 +82,7 @@ const PageAbout = () => {
           <div className="col-md-6">
             <div className="img-fluid">
               <Image
-                src="/assets/sphImages/Image 27.jpg"
+                src="/images/technologyteam/digital_literacy.jpeg"
                 alt="Image Description"
                 width={600}
                 height={400}

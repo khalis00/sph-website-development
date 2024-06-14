@@ -67,6 +67,9 @@ const Team = () => {
   return (
     <div>
       <div className='text-center mb-7'>
+        <br></br>
+        <br></br>
+        <br></br>
         <h1 className='display-4 text-primary'>Meet the Team</h1>
       </div>
       <div className='container content-space-1'>

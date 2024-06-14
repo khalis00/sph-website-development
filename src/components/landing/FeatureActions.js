@@ -54,7 +54,7 @@ const FeatureActions = () => {
                   {/* Heading */}
                   <div className="pe-lg-3 mb-7">
                       <h3 className="text-dark">Enhancing —
-                      Youth Civic Participation and Community Impact</h3>
+                       Civic Participation and Community Impact</h3>
                       <div className="lead text-dark">
                       <ul>
                         <li>Providing safe and conducive spaces for youth to engage in civic activities and express their ideas.</li>
@@ -96,7 +96,7 @@ const FeatureActions = () => {
                           alt="Image Description"
                         />
                         {/* End Images */}
-                      </div>
+                      </div><br></br><br></br><br></br>
                     </div>
                     {/* End Col */}
                     <div className="col-6">

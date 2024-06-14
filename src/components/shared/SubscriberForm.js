@@ -10,8 +10,9 @@ const SubscriberForm = () => {
     email: '',
   });
 
-  const [submitted, setSubmitted] = useState(false); // State to track form submission
-  const [submitting, setSubmitting] = useState(false); // State to track form submission progress
+  const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -23,29 +24,23 @@ const SubscriberForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitting(true); // Start form submission progress
+    setSubmitting(true);
 
     try {
       const response = await axios.post(
         `${process.env.NEXT_PUBLIC_BASE_URL}${process.env.NEXT_PUBLIC_SUBSCRIBERS_FORM}`,
         formData
       );
+      console.log('Form submitted successfully:', response.data);
 
-      // Clear form data after successful submission
-      setFormData({
-        name: '',
-        email: '',
-      });
-
-      // Redirect to the success page
-      router.push('/success');
-
-      // Set submitted state to true after successful submission
       setSubmitted(true);
+      setFormData({ name: '', email: '' }); // Clear form data after successful submission
+      router.push('/success');
     } catch (error) {
-      console.error('Error:', error);
+      console.error('Error submitting form:', error);
+      setErrorMessage('Failed to submit form. Please try again.');
     } finally {
-      setSubmitting(false); // Complete form submission progress
+      setSubmitting(false);
     }
   };
 
@@ -90,7 +85,10 @@ const SubscriberForm = () => {
           {submitting ? 'Submitting...' : 'SUBMIT'}
         </button>
       </div>
-      {submitted && <p>Form submitted successfully!</p>} {/* Display message if form submitted */}
+
+      {errorMessage && <p className='text-danger'>{errorMessage}</p>}
+      {submitted && <p className='text-success'>Form submitted successfully!</p>}
+
       <span className='form-text'>
         Need help?{' '}
         <a className='link' href='../contact'>

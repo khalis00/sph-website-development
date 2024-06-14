@@ -130,3 +130,10 @@ color:#fff;
   font-size: 1.75rem; 
   font-weight: bold; 
 }
+
+/* A style of adjusting image quality in team technology team image.*/
+.high-quality-image {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: high-quality;
+}

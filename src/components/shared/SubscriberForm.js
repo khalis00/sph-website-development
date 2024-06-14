@@ -1,44 +1,53 @@
-import React, { useState } from 'react'
-import { useRouter } from 'next/router'
-import axios from 'axios'
+import React, { useState } from 'react';
+import { useRouter } from 'next/router';
+import axios from 'axios';
 
 const SubscriberForm = () => {
-  const router = useRouter()
+  const router = useRouter();
 
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-  })
+  });
 
   const [submitted, setSubmitted] = useState(false); // State to track form submission
+  const [submitting, setSubmitting] = useState(false); // State to track form submission progress
 
-  const handleChange = e => {
-    const { name, value } = e.target
+  const handleChange = (e) => {
+    const { name, value } = e.target;
     setFormData({
       ...formData,
       [name]: value,
-    })
-  }
+    });
+  };
 
-  const handleSubmit = async e => {
-    e.preventDefault()
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setSubmitting(true); // Start form submission progress
+
     try {
       const response = await axios.post(
-          `${process.env.NEXT_PUBLIC_BASE_URL}${process.env.NEXT_PUBLIC_SUBSCRIBERS_FORM}`,
+        `${process.env.NEXT_PUBLIC_BASE_URL}${process.env.NEXT_PUBLIC_SUBSCRIBERS_FORM}`,
         formData
-      )
+      );
+
       // Clear form data after successful submission
       setFormData({
         name: '',
         email: '',
-      })
+      });
+
       // Redirect to the success page
-      router.push('/success')
-      setSubmitted(true); // Set submitted state to true after successful submission
+      router.push('/success');
+
+      // Set submitted state to true after successful submission
+      setSubmitted(true);
     } catch (error) {
-      console.error('Error:', error)
+      console.error('Error:', error);
+    } finally {
+      setSubmitting(false); // Complete form submission progress
     }
-  }
+  };
 
   return (
     <form onSubmit={handleSubmit}>
@@ -54,7 +63,6 @@ const SubscriberForm = () => {
           placeholder='Type your name'
           aria-label='Type your name'
           required
-          data-msg='Please enter your name.'
           value={formData.name}
           onChange={handleChange}
         />
@@ -72,15 +80,14 @@ const SubscriberForm = () => {
           placeholder='example@site.com'
           aria-label='example@site.com'
           required
-          data-msg='Please enter a valid email address.'
           value={formData.email}
           onChange={handleChange}
         />
       </div>
 
       <div className='d-grid text-center'>
-        <button type='submit' className='btn btn-primary btn-lg'>
-          SUBMIT
+        <button type='submit' className='btn btn-primary btn-lg' disabled={submitting}>
+          {submitting ? 'Submitting...' : 'SUBMIT'}
         </button>
       </div>
       {submitted && <p>Form submitted successfully!</p>} {/* Display message if form submitted */}
@@ -91,7 +98,7 @@ const SubscriberForm = () => {
         </a>
       </span>
     </form>
-  )
-}
+  );
+};
 
-export default SubscriberForm
+export default SubscriberForm;

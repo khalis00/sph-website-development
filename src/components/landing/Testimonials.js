@@ -6,8 +6,8 @@ const Testimonials = () => {
       <div className='container content-space-1 content-space-md-3'>
         <div className='text-center mb-5'>
           <img
-            className='avatar avatar-xl avatar-4x3'
-            src='./assets/svg/illustrations/oc-review.svg'
+            className='avatar avatar-xl avatar-4x3 rounded-circle'
+            src="/assets/images/chris.jpeg"
             alt='Illustration'
           />
         </div>
@@ -25,8 +25,8 @@ const Testimonials = () => {
             </span>
           </figcaption>
           <img
-            className='avatar avatar-xxl avatar-4x3'
-            src='./logo/logo.png'
+            className='avatar avatar-xxl avatar-4x3 rounded-circle'
+            src='/logo/logo.png'
             alt='Logo'
           />
         </figure>

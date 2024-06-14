@@ -10,6 +10,8 @@ const SubscriberForm = () => {
     email: '',
   })
 
+  const [submitted, setSubmitted] = useState(false); // State to track form submission
+
   const handleChange = e => {
     const { name, value } = e.target
     setFormData({
@@ -25,7 +27,6 @@ const SubscriberForm = () => {
           `${process.env.NEXT_PUBLIC_BASE_URL}${process.env.NEXT_PUBLIC_SUBSCRIBERS_FORM}`,
         formData
       )
-    //   console.log(response.data)
       // Clear form data after successful submission
       setFormData({
         name: '',
@@ -33,6 +34,7 @@ const SubscriberForm = () => {
       })
       // Redirect to the success page
       router.push('/success')
+      setSubmitted(true); // Set submitted state to true after successful submission
     } catch (error) {
       console.error('Error:', error)
     }
@@ -80,13 +82,14 @@ const SubscriberForm = () => {
         <button type='submit' className='btn btn-primary btn-lg'>
           SUBMIT
         </button>
-        <span className='form-text'>
-          Need help?{' '}
-          <a className='link' href='../contact'>
-            Visit our Help Center <i className='bi-chevron-right small ms-1'></i>
-          </a>
-        </span>
       </div>
+      {submitted && <p>Form submitted successfully!</p>} {/* Display message if form submitted */}
+      <span className='form-text'>
+        Need help?{' '}
+        <a className='link' href='../contact'>
+          Visit our Help Center <i className='bi-chevron-right small ms-1'></i>
+        </a>
+      </span>
     </form>
   )
 }
